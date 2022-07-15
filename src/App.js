@@ -6,12 +6,19 @@ import inbox from './images/inbox.png'
 import video from './images/video.png'
 import search from './images/search.png'
 import profile from './images/profile-pic.png'
+import news from './images/news.png'
+import friend from './images/friends.png'
+import group from './images/group.png'
+import Marketplace from './images/marketplace.png'
+import Watch from './images/watch.png'
+
 
 function App() {
   return (
+
    <div>
     <body>
-    <section>
+   
         <nav>
             <div class="nav-left">
                 <img src={logo} alt="" class="logo"/>
@@ -34,16 +41,44 @@ function App() {
                     <input type="text" placeholder="search"/>   
                 
                 </div>
-                <div class="nav-user-icon">
+                <div class="nav-user-icon online">
                     <img src={profile} alt=""/>
                 </div>
             </div>
         </nav>
        
         
-    </section>
+   
+
+
+
+
+         <div className="container">
+{/* ----------------------left side bar----------------- */}
+          <div className="left-sidebar">
+            <div className="imp-link">
+              <a href="#"><img src={news} alt="" /> Latest News</a>
+              <a href="#"><img src={friend} alt="" /> Friend</a>
+              <a href="#"><img src={group} alt="" /> group</a>
+              <a href="#"><img src={Marketplace} alt="" /> Marketplace</a>
+              <a href="#"><img src={Watch} alt="" /> Watch</a>
+              <a href="#">See More</a>
+            </div>
+
+          </div>
+          {/* ----------------------main content----------------- */}
+          <div className="main-content">
+
+          </div>
+          {/* ----------------------right side bar----------------- */}
+          <div className="right-sidebar">
+            
+          </div>
+         
+         </div>
+
 </body>
-   </div>
+</div>
   );
 }
 
